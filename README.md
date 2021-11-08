@@ -7,7 +7,7 @@ A Python 3 script for ..
 ## Quick start
  Start the script with:
 ```console
-python3 cifpal.py filename.cif atom_name
+python3 cifpal.py filename.cif atom1_name (atom2_name ...)
 ```
 to open a CIF.
 
