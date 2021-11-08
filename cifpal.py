@@ -4,7 +4,7 @@
 # mostly in proper_chem_formula and proper_space_group
 # replace in case of problems, but c'mon it's 2021
 # overline numbers are not possible with Win10 
-# had to be commented
+# had to be partially commented
 
 import sys                        #sys
 import argparse                   #argument parser
@@ -16,7 +16,8 @@ from tabulate import tabulate     #nice table output
 
 sys.stdout.reconfigure(encoding='utf-8')  #for windows console
 
-splitstr=''
+splitstr='' #for proper_chem_formula
+
 #sym-op denotation
 sym_dict = {
 	 1: "'",
@@ -329,7 +330,7 @@ angle_table=block.find(['_geom_angle_atom_site_label_1',
 						'_geom_angle_site_symmetry_1',
 						'_geom_angle_site_symmetry_3'])
 
-#sym-op denotation
+#summary table
 summary_list = [
 	['compound',block.name],
 	['empirical formula',proper_chem_formula(block.find_value('_chemical_formula_sum').strip("'"))],
