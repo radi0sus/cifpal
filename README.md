@@ -106,6 +106,7 @@ The script makes extensive use of Unicode characters, which can cause problems w
 ```console
 python3 cifpal.py 2103396.cif Cu1
 ```
+
 Open `2103396.cif` and show tables for `Cu1`.
 ![show](/examples/example1a.gif)
 
@@ -113,6 +114,7 @@ Open `2103396.cif` and show tables for `Cu1`.
 ```console
 python3 cifpal.py 2103396.cif Cu1 Cu2 -ee K -f 12
 ```
+
 Open `2103396.cif` and show tables for `Cu1` and `Cu2`, exclude bonds to potassium (`-ee K`) and search for copper copper contacs within a range of 12 Å (`-f 12`).   
 
 | compound                   | 1K-kd25                                      |
