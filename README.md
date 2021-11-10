@@ -94,8 +94,11 @@ Statistics are derived from the values of the bonding parameters. The individual
 
 Sam. std. dev. = Sample standard deviation, Pop. std. dev. = population standard deviation, Std. error = Standard Error or Standard Error of Mean. Please refer to literature or Wikipedia for the meaning of these terms. The population standard deviation is probably the value you're looking for.
 
+## Remarks
+The format of the tabular output can be easily changed in the script using another formatting option of the `tabulate` module.
+
 ## Known Issues
 The script makes extensive use of Unicode characters, which can cause problems with output or conversion.
 
-## Remarks
-The format of the tabular output can be easily changed in the script using another formatting option of the `tabulate` module.
+## Examples
+
