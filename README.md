@@ -70,3 +70,5 @@ Cu1–N3 2.154(3), Cu1–N5 2.170(3), Cu1–N4 2.187(3); O1–Cu1–N1 98.68(12)
 - `-sde`, optional:  descending alphabetical sort of elements
 - `-f` `N`, optional: find contacts of named atoms within d Å, e.g. `-f 4.5`, find contacts of Cu1 and Cu2 (Cu1…Cu1, Cu2…Cu2, Cu1…Cu2) in a radius of 4 Å each within the cell boundary
 
+## Statistics
+Statistics are derived from the values of the bonding parameters. The individual e.s.d.'s or s.u.'s of the bond lengths or angles (usually given in parentheses, e.g. 1.234(5) Å) are not taken into account.
