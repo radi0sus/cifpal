@@ -106,8 +106,8 @@ The script makes extensive use of Unicode characters, which can cause problems w
 ```console
 python3 cifpal.py 2103396.cif Cu1
 ```
-
 Open `2103396.cif` and show tables for `Cu1`.
+
 ![show](/examples/example1a.gif)
 
 ### Example 2:
