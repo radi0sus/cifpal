@@ -67,7 +67,7 @@ will save the output in markdown format.
 
 Convert markdown to docx (install [PANDOC](https://pandoc.org) first):
 ```console
-pandoc filename.md -o filenamee.docx
+pandoc filename.md -o filename.docx
 ```
 This will convert the markdown file to a docx file. Open it with your favorite
 word processor. Convert the file to even more formats such as HTML, PDF or TeX with PANDOC.
