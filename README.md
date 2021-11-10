@@ -103,5 +103,9 @@ The script makes extensive use of Unicode characters, which can cause problems w
 ## Examples
 
 ### Example 1:
+ Start the script with:
+```console
+python3 cifpal.py 2103396.cif Cu1
+```
 ![show](/examples/example1a.gif)
 
