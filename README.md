@@ -64,11 +64,9 @@ Cu1–N3 2.154(3), Cu1–N5 2.170(3), Cu1–N4 2.187(3); O1–Cu1–N1 98.68(12)
 - `atom_name(s)`, required: atom names, e.g. `Cu1` or `Cu1 Cu2`
 - `-ea` `atom(s)`, optional: exclude atoms, e.g. `-ea K1` exclude bonds to K1, `-ea K1 N2` exclude bonds K1 and N1
 - `-ee` `elements(s)`,  optional: exlude elements,  e.g. `-ee K` exclude bonds to potassium, `-ea K N` exclude bonds to potassium and nitrogen
-- `-xmin` `N` , optional: start spectra at `N` wave numbers
-- `-xmax` `N` , optional: end spectra at `N` wave numbers
-- `-t` `N` , optional: threshold for peak detection, with `N` being the intensity (default is 5% from the maximum intensity)
-- `-m` `N` , optional: multiply intensities with `N` (default is `N = 1`)
-- `-a` `N` , optional: add or subtract `N` to / from wave numbers (default is `N = 0`)
-- `-i` `N` , optional: add or subtract `N` to / from intensities (default is `N = 0`)
-- `-o` , optional: show the normalized and not normalized overlay spectrum and the normalized stacked spectrum
-- `-n` , optional: do not save `summary.pdf`
+- `-sa`, optional: sort values for bond lengths and angles ascending
+- `-sd`, optional: sort values for bond lengths and angles descending
+- `-sae`, optional: ascending alphabetical sort of elements
+- `-sde`, optional:  descending alphabetical sort of elements
+- `-f` `N`, optional: find contacts of named atoms within d Å, e.g. `-f 4`, find contacts of Cu1 and Cu2 (Cu1…Cu1, Cu2…Cu2, Cu1…Cu2) in a radius of 4 Å each within the cell boundary
+
