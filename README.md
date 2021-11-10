@@ -21,5 +21,12 @@ A table with general informations.
 | T /K                       | 133(2)                                       |
 | ...                        | ...                                          |
 
+A table of bond lengths with atoms from the input, `atom1_name (atom2_name ...)`, Cu1 in that example.
+
+| Atoms   | Bond length /Å   |
+|---------|------------------|
+| Cu1–O1  | 1.907(2)         |
+| Cu1–N1  | 1.911(3)         |
+| ...     | ....             |
 
 ## Command-line options
