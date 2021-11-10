@@ -1,5 +1,5 @@
 # cifpal
-A Python 3 script for printing the summary table and tables of bond lengths and angles to the console. The script furthermore calculates average values, including a variety of statistical parameters, and is able to group bonding parameters. Contacts within a defined radius can be printed as well.
+A Python 3 script for printing the summary table and tables of bond lengths and angles to the console. The script furthermore calculates average values, including a variety of statistical parameters, and is able to group bonding parameters. Contacts within a defined radius can be printed as well. The output should result in nicely rendered mark down tables. 
 
 ## External modules
  `gemmi`,  `pandas`,  `tabulate`
