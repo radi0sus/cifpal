@@ -1,6 +1,12 @@
 # cifpal
 A Python 3 script for printing the summary table and tables of bond lengths and angles to the console. The script furthermore calculates average values, including a variety of statistical parameters, and is able to group bonding parameters. Contacts within a defined radius can be printed as well. The output should result in nicely rendered mark down tables. 
 
+The script uses the Gemmi library for CIF processing:
+
+https://gemmi.readthedocs.io/en/latest/
+
+https://github.com/project-gemmi/gemmi
+
 ## External modules
  `gemmi`,  `pandas`,  `tabulate`
  
@@ -91,5 +97,5 @@ Sam. std. dev. = Sample standard deviation, Pop. std. dev. = population standard
 ## Known Issues
 The script makes extensive use of Unicode characters, which can cause problems with output or conversion.
 
-##Remarks
+## Remarks
 The format of the tabulated output can be easily changed using different options of the `tabulate` module.
