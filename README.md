@@ -98,4 +98,4 @@ Sam. std. dev. = Sample standard deviation, Pop. std. dev. = population standard
 The script makes extensive use of Unicode characters, which can cause problems with output or conversion.
 
 ## Remarks
-The format of the tabulated output can be easily changed using different options of the `tabulate` module.
+The format of the tabular output can be easily changed in the script using another formatting option of the `tabulate` module.
