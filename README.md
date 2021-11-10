@@ -72,6 +72,7 @@ Cu1–N3 2.154(3), Cu1–N5 2.170(3), Cu1–N4 2.187(3); O1–Cu1–N1 98.68(12)
 
 ## Statistics
 Statistics are derived from the values of the bonding parameters. The individual e.s.d.'s or s.u.'s of the bond lengths or angles (usually given in parentheses, e.g. 1.234(5) Å) are not taken into account.
+
 Sam. std. dev. = Sample standard deviation, Pop. std. dev. = population standard deviation, Std. error = Standard Error or Standard Error of Mean. Please refer to literature or Wikipedia for the meaning of these terms. The population standard deviation is probably the value you're looking for.
 
 
