@@ -59,6 +59,19 @@ Selected distances /Å and angles /° for 1K-kd25: Cu1–O1 1.907(2), Cu1–N1 1
 Cu1–N3 2.154(3), Cu1–N5 2.170(3), Cu1–N4 2.187(3); O1–Cu1–N1 98.68(12), ...
 ```
 
+Start the script with:
+```console
+python3 cifpal.py filename.cif atom1_name (atom2_name ...) > filename.md
+```
+will save the output in markdown format.
+
+Convert markdown to docx (install [PANDOC](https://pandoc.org) first):
+```console
+pandoc filename.md -o filenamee.docx
+```
+This will convert the markdown file to a docx file. Open it with your favorite
+word processor. Convert the file to even more formats such as HTML, PDF or TeX with PANDOC.
+
 ## Command-line options
 - `filename` , required: filename, e.g. `my_structure.cif`
 - `atom_name(s)`, required: atom names, e.g. `Cu1` or `Cu1 Cu2`
@@ -75,4 +88,6 @@ Statistics are derived from the values of the bonding parameters. The individual
 
 Sam. std. dev. = Sample standard deviation, Pop. std. dev. = population standard deviation, Std. error = Standard Error or Standard Error of Mean. Please refer to literature or Wikipedia for the meaning of these terms. The population standard deviation is probably the value you're looking for.
 
+## Known Issues
+The script makes extensive use of Unicode characters, which can cause problems with output or conversion.
 
