@@ -11,7 +11,7 @@ python3 cifpal.py filename.cif atom1_name (atom2_name ...)
 ```
 to open the CIF. It gives the following output:
 
-A table with general informations.
+A table with general information.
 
 ```
 | compound                   | 1K-kd25                                      |
