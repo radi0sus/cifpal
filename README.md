@@ -98,7 +98,8 @@ Sam. std. dev. = Sample standard deviation, Pop. std. dev. = population standard
 The format of the tabular output can be easily changed in the script using another formatting option of the `tabulate` module.
 
 ## Known Issues
-The script makes extensive use of Unicode characters, which can cause problems with output or conversion.
+- The script makes extensive use of Unicode characters, which can cause problems with output or conversion.
+- Overline numbers N̅ (e.g. 1̅) will be displayed as -N, because of Windows unicode issues. 
 
 ## Examples
 
