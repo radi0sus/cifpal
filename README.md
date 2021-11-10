@@ -55,7 +55,8 @@ Four tables with angles in the same manner.
 
 A figure caption with bond lengths and angles.
 ```
-Selected distances /Å and angles /° for 1K-kd25: Cu1–O1 1.907(2), Cu1–N1 1.911(3), Cu1–N3 2.154(3), Cu1–N5 2.170(3), Cu1–N4 2.187(3); O1–Cu1–N1 98.68(12), O1–Cu1–N3 171.94(12), N1–Cu1–N3 80.09(13), O1–Cu1–N5 103.92(12)...
+Selected distances /Å and angles /° for 1K-kd25: Cu1–O1 1.907(2), Cu1–N1 1.911(3), 
+Cu1–N3 2.154(3), Cu1–N5 2.170(3), Cu1–N4 2.187(3); O1–Cu1–N1 98.68(12), ...
 ```
 
 ## Command-line options
