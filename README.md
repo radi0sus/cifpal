@@ -102,3 +102,6 @@ The script makes extensive use of Unicode characters, which can cause problems w
 
 ## Examples
 
+### Example 1:
+![show](/examples/example1.gif)
+
