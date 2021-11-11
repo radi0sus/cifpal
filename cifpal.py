@@ -161,7 +161,9 @@ def proper_chem_formula(formula):
 	#first supscript C111 --> C₁₁₁
 	pattern=re.split(r"([A-Z][a-z]?)(\d+\.?\d{0,})",formula.strip("'"))
 	for split in pattern:
-		split=split.replace(' ','')
+		#in case of A B remove space, e.g. Co Cl --> CoCl
+		if re.search('([A-Z][a-z]?)(\s)([A-Z][a-z]?)', split):
+			split=split.replace(' ','')
 		if re.match('\d', split):
 			p=re.compile(r"([0|1|2|3|4|5|6|7|8|9])")
 			split=p.sub(lambda x: utf_sub_dict[x.group()],split)
