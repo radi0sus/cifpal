@@ -92,14 +92,14 @@ word processor. Convert the file to even more formats such as HTML, PDF or TeX w
 ## Statistics
 Statistics are derived from the values of the bonding parameters. The individual e.s.d.'s or s.u.'s of the bond lengths or angles (usually given in parentheses, e.g. 1.234(5) Å) are not taken into account.
 
-Sam. std. dev. = Sample standard deviation, Pop. std. dev. = population standard deviation, Std. error = Standard Error or Standard Error of Mean. Please refer to literature or Wikipedia for the meaning of these terms. The population standard deviation is probably the value you're looking for.
+Sam. std. dev. = Sample standard deviation, Pop. std. dev. = Population standard deviation, Std. error = Standard error or standard error of mean. Please refer to literature or Wikipedia for the meaning of these terms. The population standard deviation is probably the value you are looking for.
 
 ## Remarks
 The format of the tabular output can be easily changed in the script using another formatting option of the `tabulate` module.
 
 ## Known Issues
 - The script makes extensive use of Unicode characters, which can cause problems with output or conversion.
-- Overline numbers N̅ (e.g. 1̅) will be displayed as -N, because of Windows unicode issues. 
+- Overline numbers N̅ (e.g. 1̅) will be displayed as -N, because of Windows Unicode issues. 
 
 ## Examples
 
