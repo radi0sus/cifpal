@@ -161,6 +161,7 @@ def proper_chem_formula(formula):
 	#first supscript C111 --> C₁₁₁
 	pattern=re.split(r"([A-Z][a-z]?)(\d+\.?\d{0,})",formula.strip("'"))
 	for split in pattern:
+		split=split.replace(' ','')
 		if re.match('\d', split):
 			p=re.compile(r"([0|1|2|3|4|5|6|7|8|9])")
 			split=p.sub(lambda x: utf_sub_dict[x.group()],split)
@@ -733,5 +734,3 @@ if len(sym_code_dict) != 0:
 	fig_caption_sym_ops = "Symmetry operation(s) used to generate equivalent atoms: " + fig_capture_sym +"."
 	#change '-' to '—'
 	print(fig_caption_sym_ops.replace('-','–'))
-
-	
