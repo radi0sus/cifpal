@@ -120,6 +120,7 @@ python3 cifpal.py 2103396.cif Cu1 Cu2 -ee K -f 12
 
 Open `2103396.cif` and show tables for `Cu1` and `Cu2`, exclude bonds to potassium (`-ee K`) and search for copper copper contacs within a range of 12 Å (`-f 12`).   
 
+
 | compound                   | 1K-kd25                                      |
 |----------------------------|----------------------------------------------|
 | empirical formula          | C₆₈H₁₂₆Cu₄F₁₂K₂N₁₆O₁₈.₅₀S₄                   |
@@ -258,4 +259,4 @@ Open `2103396.cif` and show tables for `Cu1` and `Cu2`, exclude bonds to potassi
 | O–O–Cu  |       2 |  118.845  |     118.845 |           0.1909 |           0.135  |       0.135  |   nan      |
 
 Selected distances /Å and angles /° for 1K-kd25: Cu1–O1 1.907(2), Cu1–N1 1.911(3), Cu1–N3 2.154(3), Cu1–N5 2.170(3), Cu1–N4 2.187(3), Cu2–O2 1.908(3), Cu2–N2 1.909(3), Cu2–N6 2.136(3), Cu2–N7 2.178(3), Cu2–N8 2.192(3), Cu1…Cu1' 7.5543, Cu1…Cu2' 8.2313, Cu1…Cu2 3.7978; O1–Cu1–N1 98.68(12), O1–Cu1–N3 171.94(12), N1–Cu1–N3 80.09(13), O1–Cu1–N5 103.92(12), N1–Cu1–N5 137.78(13), N3–Cu1–N5 81.87(12), O1–Cu1–N4 91.77(11), N1–Cu1–N4 130.58(13), N3–Cu1–N4 83.17(12), N5–Cu1–N4 84.14(13), O2–Cu2–N2 97.51(12), O2–Cu2–N6 171.47(12), N2–Cu2–N6 80.00(12), O2–Cu2–N7 104.64(11), N2–Cu2–N7 138.96(13), N6–Cu2–N7 82.17(12), O2–Cu2–N8 91.96(11), N2–Cu2–N8 129.27(12), N6–Cu2–N8 83.51(12), N7–Cu2–N8 84.47(11), C2–N1–Cu1 120.8(3), N2–N1–Cu1 127.3(2), C3–N2–Cu2 121.1(3), N1–N2–Cu2 128.7(2), C5–N3–Cu1 101.9(2), C10–N3–Cu1 110.2(2), C4–N3–Cu1 108.7(2), C7–N4–Cu1 100.7(2), C6–N4–Cu1 107.8(2), C11–N4–Cu1 110.2(2), C9–N5–Cu1 103.1(2), C8–N5–Cu1 106.9(2), C14–N5–Cu1 110.8(2), C23–N6–Cu2 102.1(2), C18–N6–Cu2 110.5(2), C17–N6–Cu2 109.3(2), C20–N7–Cu2 106.6(2), C24–N7–Cu2 111.6(2), C19–N7–Cu2 103.0(2), C21–N8–Cu2 100.4(2), C27–N8–Cu2 111.1(2), C22–N8–Cu2 107.1(2), O2–O1–Cu1 118.71(17), O1–O2–Cu2 118.98(18).
-Symmetry operation(s) used to generate equivalent atoms: (') –x+1,–y+1,–z+1.
+Symmetry operation(s) used to generate equivalent atoms: (') –x+1,–y+1,–z.
