@@ -87,7 +87,7 @@ word processor. Convert the file to even more formats such as HTML, PDF or TeX w
 - `-sd`, optional: sort values for bond lengths and angles descending
 - `-sae`, optional: ascending alphabetical sort of elements
 - `-sde`, optional:  descending alphabetical sort of elements
-- `-f` `N`, optional: find contacts of named atoms within d Å, e.g. `-f 4.5`, find contacts of Cu1 and Cu2 (Cu1…Cu1, Cu2…Cu2, Cu1…Cu2) in a radius of 4 Å each within the cell boundary
+- `-f` `N`, optional: find contacts of named atoms within d Å, e.g. `-f 4.5`, find contacts of Cu1 and Cu2 with neighbouring Cu1 and Cu2 atoms (Cu1…Cu1, Cu2…Cu2, Cu1…Cu2) in a radius of 4.5 Å each 
 
 ## Statistics
 Statistics are derived from the values of the bonding parameters. The individual e.s.d.'s or s.u.'s of the bond lengths or angles (usually given in parentheses, e.g. 1.234(5) Å) are not taken into account.
@@ -100,6 +100,8 @@ The format of the tabular output can be easily changed in the script using anoth
 ## Known Issues
 - The script makes extensive use of Unicode characters, which can cause problems with output or conversion.
 - Overline numbers N̅ (e.g. 1̅) will be displayed as -N, because of Windows Unicode issues. 
+- The contact search might not work as expected. The contact search finds atoms close to the starting or central atom and stops as soon as those contacts have been found. One might therefore get contacts from neighboring cells but no further contacts within the same molecule (if parts of the molecule are related by symmetry). Even a larger search radius is not helpful. In many situations this limitation should be no problem.
+- CIFs created with older versions of SHELX are not supported.
 
 ## Examples
 
