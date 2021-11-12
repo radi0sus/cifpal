@@ -63,7 +63,6 @@ sym_dict = {
 }
 
 #for sym code denotation
-number_of_calls = 0
 sym_code_dict=dict()
 
 def code_to_sym(symcode): 
@@ -97,15 +96,8 @@ def code_to_symbol(symcode):
 		#no sym op (='.') returns ''
 		sym_symbol=''
 	else:
-		#number of calls of the functions
-		global number_of_calls
-		#reset number of calls
-		if number_of_calls < 40:
-			number_of_calls += 1
-		else:
-			number_of_calls = 1
 		#sym symbols from sym_dict
-		sym_symbol_call=sym_dict[number_of_calls]
+		sym_symbol_call=sym_dict[len(sym_code_dict)+1]
 		
 		try:
 			#check if symcode is already in sym_code_dict
@@ -439,9 +431,10 @@ if args.findcontact:
 				#only add distances from atom names in input
 				if site.label in args.atom_names:
 						#get symmetry op an translation
-						nim = small.cell.find_nearest_image(mark.pos(), small.cell.orthogonalize(atom.fract))
+						nim = small.cell.find_nearest_pbc_image(atom.orth(small.cell),site.orth(small.cell),mark.image_idx)
+						#nim = small.cell.find_nearest_image(mark.pos(), small.cell.orthogonalize(atom.fract)) # this is wrong! 
 						#extract sym code from nearest image
-						code = str(nim.symmetry_code())
+						code = nim.symmetry_code()
 						#replace 1_555 with '.'
 						if code == '1_555':
 							code='.'
@@ -637,9 +630,6 @@ if args.sortascEl:
 #sort by elements descending, A --> Z (not PSE like)	
 if args.sortdesEl:
 	sel_angles=sel_angles.sort_values(by=['El_2','El_1','El_3','A_value','Atom2','Atom1','Atom3'],ascending=False)
-
-#reset number_of_call in sym symbol function (sym symbol: ','',''', etc.)
-number_of_calls = 0
 
 #exit if no angles are present
 if len(sel_angles) == 0:
